@@ -111,4 +111,41 @@ fun score(card_list, goal) =
   end
 
 fun officiate(card_list, move_list, goal) =
-  
+  let
+    val held_cards = []
+
+    fun draw_card =
+      case card_list of
+          c :: cl' => c :: held_cards
+        | []  => held_cards
+
+    fun make_move(move_list, held_cards) =
+      case move_list of
+          Discard(card) => 1
+        | Draw => (case card_list of 
+            (*cd :: left' => remove_card(cd, card_list)*)
+            2
+          )
+  in
+  end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
